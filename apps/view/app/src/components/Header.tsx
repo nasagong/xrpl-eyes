@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Settings } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useCardTheme } from '../contexts/CardThemeContext';
 import { SettingsModal } from './SettingsModal';
@@ -37,7 +38,7 @@ export const Header = () => {
             </button>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-8">
             {user ? (
               <div
                 onClick={() => setIsSettingsOpen(true)}
@@ -45,13 +46,15 @@ export const Header = () => {
               >
                 {/* Identity Card Style */}
                 <div
-                  className="h-16 w-12 rounded-lg p-3 select-none backdrop-blur-sm relative overflow-hidden transition-all duration-300 hover:brightness-110"
+                  className="flex items-center justify-center h-16 w-12 rounded-lg p-3 select-none backdrop-blur-sm relative overflow-hidden transition-all duration-300 hover:brightness-110"
+                  title="카드 색 변경"
                   style={{ 
                     backgroundImage: cardGradient,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}
                 >
+                  <Settings className="w-5 h-5 text-white" />
                   {/* Glow effect */}
                   <div
                     className="absolute flex item-center justify-center inset-0 rounded-xl transition-all border border-2 duration-300 hover:shadow-lg"
