@@ -170,7 +170,7 @@ export const SettingsModal = ({ isOpen, onClose }: SettingsModalProps) => {
               <div className="flex justify-between items-end text-white/40 text-xs w-full">
                 <div className="flex flex-col">
                   <p>XRPL</p>
-                  <p>DApp Radar</p>
+                  <p>Eyes</p>
                 </div>
                 <img src="/logo.png" alt="X" className="w-6 h-6" />
               </div>
@@ -213,7 +213,7 @@ export const SettingsModal = ({ isOpen, onClose }: SettingsModalProps) => {
                   <div className="flex justify-between items-end text-white/40 text-xs w-full">
                     <div className="flex flex-col">
                       <p>XRPL</p>
-                      <p>DApp Radar</p>
+                      <p>Eyes</p>
                     </div>
                     <img src="/logo.png" alt="X" className="w-6 h-6" />
                   </div>
