@@ -1,0 +1,31 @@
+services:
+  xrpl-radar-server:
+    build: 
+      context: ./apps/server
+      dockerfile: Dockerfile
+    container_name: xrpl-radar-server
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - xrpl-network
+    depends_on: []
+    env_file:
+      - ./apps/server/.env
+
+  xrpl-radar-view:
+    build:
+      context: ./apps/view/app
+      dockerfile: Dockerfile
+    container_name: xrpl-radar-view
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    networks:
+      - xrpl-network
+    depends_on:
+      - xrpl-radar-server
+
+networks:
+  xrpl-network:
+    driver: bridge 

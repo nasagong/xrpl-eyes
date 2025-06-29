@@ -1,0 +1,16 @@
+package gairos.xrpl_radar.app.dto;
+
+import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class ServiceUawDataDto {
+    private String serviceName;
+    private List<Integer> uawData;
+} 
