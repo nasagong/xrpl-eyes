@@ -49,13 +49,13 @@ export const IdentityCard = () => {
             <div className="font-bold text-lg mt-2 text-white pl-3">{user.id}</div>
           </div>
           
-          <div className="absolute top-36 left-3 text-center mt-8">
+          <div className="absolute top-36 left-2 text-center mt-8">
             <div className="text-7xl text-white mb-4 text-opacity-50">  
               {user.card.sequence}
             </div>
           </div>
 
-          <div className="absolute bottom-4 px-4 right-2 w-full text-3xl text-white text-opacity-40">
+          <div className="absolute bottom-4 px-4 right-0 w-full text-3xl text-white text-opacity-40">
             <p>XRPL</p>
             <p>Eyes</p>
           </div>

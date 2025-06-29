@@ -60,7 +60,7 @@ export const IdentityDetailModal = ({ value, subtitle, address, onClose, isOpen 
                 <div className="flex items-center space-x-4">
                   <div>
                     <span className={`${getSubtitleColor(subtitle)} text-sm rounded-xl p-1.5 px-4 text-white shadow-md`}>{subtitle}</span>
-                    <h2 className="text-2xl font-bold text-white mt-2 drop-shadow-lg">{address}</h2>
+                    <h2 className="text-2xl font-bold text-white mt-2 drop-shadow-lg pl-3">{address}</h2>
                   </div>
                 </div>
                 <button
@@ -71,7 +71,7 @@ export const IdentityDetailModal = ({ value, subtitle, address, onClose, isOpen 
                 </button>
               </div>
 
-              <div className="p-8 space-y-8 flex-1">
+              <div className="p-8 pl-3 space-y-8 flex-1">
                 <motion.div 
                   className="pt-24"
                   initial={{ y: 20, opacity: 0 }}
@@ -90,7 +90,7 @@ export const IdentityDetailModal = ({ value, subtitle, address, onClose, isOpen 
                   transition={{ delay: 0.2 }}
                 >
                   <div className="flex justify-between items-center">
-                  <p className="text-4xl">XRPL<br /> DApp Radar</p>
+                  <p className="text-4xl">XRPL<br /> Eyes</p>
                   <img src="/logo.png" alt="X" className="w-14 h-14" />
                   </div>
                 </motion.div>
