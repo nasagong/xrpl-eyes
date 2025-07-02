@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/api";
+const URL = import.meta.env.VITE_API_URL;
 
 const API = {
     // POST : Register
